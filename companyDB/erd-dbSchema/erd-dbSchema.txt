@@ -1,0 +1,17 @@
+ER diagram to database schema
+
+Step1: Mapping of Regular Entity Types
+- For each regular entity type create a relation(table) that includes all the simple attributes of that entity.
+
+Step2: Mapping of Weak Entity Types
+- For each weak entity type create a relation(table) that includes all simple attributes of the weak entity.
+- The primary key of the new relation should be the partial key of the weak entity pluys the primary key of its owner.
+
+Step3: Mapping of Binary 1:1 Relationship Types
+- Include one side of the relationship as a foreign key in the other. Favour total participation.
+
+Step4: Mapping of Binary 1:N Relationship types
+- Include the 1 side's primary key as a foreign key on thje N side relation(table)
+
+Step5: Mapping of Binary M:N Relationship types
+- Create a new Relation whose primary key is a combination of both entities primary keys. Also, include any relationship attributes.
